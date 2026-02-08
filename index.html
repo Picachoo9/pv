@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hotel Line Products | Kashi Group of Services</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+  </style>
+
+  <!-- External JavaScript -->
+  <script defer src="script.js"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-900">
+
+  <!-- NAVBAR -->
+  <nav class="bg-white shadow-lg p-5 flex justify-between items-center fixed top-0 w-full z-50">
+    <h1 class="text-3xl font-extrabold tracking-wide">Hotel Products</h1>
+
+    <div class="hidden md:flex gap-8 text-lg font-semibold">
+      <a href="#home" class="hover:text-blue-600">Home</a>
+      <a href="#products" class="hover:text-blue-600">Products</a>
+      <a href="#about" class="hover:text-blue-600">About</a>
+      <a href="#contact" class="hover:text-blue-600">Contact</a>
+    </div>
+
+    <!-- Cart Icon -->
+    <div class="relative">
+      <svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" fill="black" viewBox="0 0 24 24">
+        <path d="M7 4h-2l-3 9v2h2v7h2v-7h10v7h2v-7h2v-2l-3-9h-2zm1.721 2h6.558l2.143 6h-10.844l2.143-6zm-4.721 8l1.5-4h13l1.5 4h-16z"/>
+      </svg>
+      <span id="cart-count" class="hidden absolute -top-3 -right-3 bg-red-600 text-white px-2 py-1 text-xs rounded-full">
+        0
+      </span>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="mt-24">
+    <div class="h-96 rounded-xl bg-cover bg-center"
+      style="background-image:url('https://images.pexels.com/photos/12875154/pexels-photo-12875154.jpeg?auto=compress&cs=tinysrgb&w=1600')">
+    </div>
+
+    <div class="text-center mt-6">
+      <h2 class="text-4xl font-bold">Premium Quality Hotel Supplies</h2>
+    </div>
+  </section>
+
+  <!-- PRODUCT SECTION -->
+  <section id="products" class="max-w-7xl mx-auto py-20 px-6">
+    <h2 class="text-4xl font-bold text-center mb-14">Our Products</h2>
+
+    <div id="product-list" class="grid grid-cols-1 md:grid-cols-3 gap-10"></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="bg-white py-20 px-6 text-center">
+    <h2 class="text-4xl font-bold mb-6">About Us</h2>
+    <p class="text-lg max-w-3xl mx-auto text-gray-700 leading-relaxed">
+      We supply premium hotel amenities including soaps, shampoos, room fresheners,
+      microfiber cloths, floor cleaners, and more. We ensure top-quality products
+      for the hospitality industry.
+    </p>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="bg-gray-100 py-20 px-6 text-center">
+    <h2 class="text-4xl font-bold mb-6">Contact Us</h2>
+
+    <form class="max-w-3xl mx-auto grid grid-cols-1 gap-6">
+      <input class="p-4 bg-white rounded-lg shadow" placeholder="Your Name" required />
+      <input class="p-4 bg-white rounded-lg shadow" placeholder="Email Address" required />
+      <textarea class="p-4 bg-white rounded-lg shadow" placeholder="Message" rows="5" required></textarea>
+      <button class="bg-blue-600 text-white py-3 rounded-lg text-xl hover:bg-blue-700">
+        Send Message
+      </button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-white text-center p-8">
+    <p class="text-lg font-bold">© 2025 Hotel Line Products | Kashi Group of Services</p>
+    <p class="text-md mt-2">
+      Mobile: <a href="tel:8858219759">8858219759</a> ,
+      <a href="tel:7071384137">7071384137</a>
+    </p>
+  </footer>
+
+</body>
+</html>
